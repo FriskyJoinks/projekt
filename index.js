@@ -50,6 +50,7 @@ if (nextSegment=== 'static'){
         <html>
         <head>
             <title>Home Page</title>
+            <link rel="stylesheet" href="/static/style.css">   
         </head>
         <body>
            <form action ="/change-website-info" method="POST">
