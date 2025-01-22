@@ -3,6 +3,7 @@ import http from 'http';
 import { ReturnDocument } from 'mongodb';
 import { handleStaticFileRequest } from './static-file-handler.js';
 import { getRequestBody } from './ulities.js';
+import fs from 'fs/promises';
 
 let websiteTitle = "Gustavo Fring Los Pollos Hermanos";
 let websitedescription = "Hello welocme to los polls hermanos";
@@ -26,20 +27,9 @@ if (nextSegment=== 'static'){
 }
 
     if (nextSegment === 'website') {
+        let template = (await fs.readFile('templates/main.volvo')).toString();
         response.writeHead(200, { 'Content-Type': 'text/html;charset=UTF8' });
-        response.write(`
-        <html>
-        <head>
-            <title>Home Page</title>
-
-            <link rel="stylesheet" href="/static/style.css">   
-        </head>
-        <body>
-        <h1>` + cleanupHTMLOutput(websiteTitle) + `</h1>
-        <p>` + cleanupHTMLOutput(websiteDescription) + `</p>
-        </body>
-        </html>
-        `);
+        response.write(template);
         response.end();
         return;
     }
