@@ -2,11 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seller Site</title>
+    <title>Home site</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <nav class="sidebar">
+            <button onclick="location.href='/main'">Home</button>
+            <button onclick="location.href='/repurchases'">Recent Purchases</button>
+            <button onclick="location.href='/buyer'">Account</button>
+        </nav>
+        <main>
+            <h1>Profile Name: x</h1>
+            <p>This person has sold y amount of purchases and has been in this community for 2 years</p>
+        </main>
+    </div>
 </body>
 </html>

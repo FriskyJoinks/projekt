@@ -9,13 +9,13 @@
 <body>
     <div class="container">
         <nav class="sidebar">
-            <button onclick="location.href='page1.html'">Page 1</button>
-            <button onclick="location.href='page2.html'">Page 2</button>
-            <button onclick="location.href='page3.html'">Page 3</button>
+            <button onclick="location.href='/main'">Home</button>
+            <button onclick="location.href='/repurchases'">Recent Purchases</button>
+            <button onclick="location.href='/buyer'">Account</button>
         </nav>
         <main>
-            <h1>Welcome to the Classic Website</h1>
-            <p>This is a simple, clean design that keeps things minimal and functional.</p>
+            <h1>Main Website</h1>
+            <p>Welcome</p>
         </main>
     </div>
 </body>

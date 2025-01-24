@@ -26,7 +26,7 @@ if (nextSegment=== 'static'){
     return;
 }
 
-    if (nextSegment === 'website') {
+    if (nextSegment === 'main') {
         let template = (await fs.readFile('templates/main.volvo')).toString();
         response.writeHead(200, { 'Content-Type': 'text/html;charset=UTF8' });
         response.write(template);
@@ -34,26 +34,33 @@ if (nextSegment=== 'static'){
         return;
     }
 
-    if (nextSegment === 'form') {
+   
+    if (nextSegment === 'seller') {x
+        let template = (await fs.readFile('templates/seller.volvo')).toString();
         response.writeHead(200, { 'Content-Type': 'text/html;charset=UTF8' });
-        response.write(`
-        <html>
-        <head>
-            <title>Home Page</title>
-            <link rel="stylesheet" href="/static/style.css">   
-        </head>
-        <body>
-           <form action ="/change-website-info" method="POST">
-            <input type="text" name="website-name" placeholder="Wesbites name">
-            <textarea name="website-description" placeholder="Beskrivning"></textarea>
-            <button type="submit">Submit</button>
-           </form>
-        </body>
-        </html>
-        `);
+        response.write(template);
         response.end();
         return;
     }
+    
+    if (nextSegment === 'repurchases') {
+        let template = (await fs.readFile('templates/repurchases.volvo')).toString();
+        response.writeHead(200, { 'Content-Type': 'text/html;charset=UTF8' });
+        response.write(template);
+        response.end();
+        return;
+    }
+
+
+    if (nextSegment === 'buyer') {
+        let template = (await fs.readFile('templates/buyer.volvo')).toString();
+        response.writeHead(200, { 'Content-Type': 'text/html;charset=UTF8' });
+        response.write(template);
+        response.end();
+        return;
+    }
+
+    
     if (nextSegment === 'change-website-info') {
         let body = await getRequestBody(request);
         let params = new URLSearchParams(body);
