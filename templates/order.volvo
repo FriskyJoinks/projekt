@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home site</title>
     <link rel="stylesheet" href="style.css">
+    <title>%{profileName}% - Order</title>
 </head>
 <body>
     <div class="container">
@@ -14,8 +15,15 @@
             <button onclick="location.href='/buyer'">Account</button>
         </nav>
         <main>
-            <h1>Welcome to Gunz</h1>
-            <p>Gunz is a known company which is international selling worldwide where you can buy weapons legally and can talk to several </p>
+            <h1>Order For %{profileName}%</h1>
+            <h2>Name</h2>
+            <p>%{profileName}%</p>
+            <h2>Country</h2>
+            <p>%{profileCountry}%</p>
+            <h2>Order for</h2>
+            <p>%{profileWeapon}%</p>
+            <h2>Email</h2>
+            <p>%{profileEmail}%</p>
         </main>
     </div>
 </body>

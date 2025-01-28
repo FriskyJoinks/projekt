@@ -14,8 +14,17 @@
             <button onclick="location.href='/buyer'">Account</button>
         </nav>
         <main>
-            <h1>Welcome to the Classic Website</h1>
-            <p>Here is where the recent purchases occurs</p>
+            <h1>Purchases</h1>
+            <p>Here is where you can set your order:</p>
+            <form method="post" action="handleOrder">
+                <input type="text" name="buyername" placeholder="Name" required>
+                <input type="text" name="buyerlocation" placeholder="Country" required>               
+                <input type="text" name="weapon" placeholder="Weapon" required>
+                <input type="email" name="buyeremail" placeholder="Email" required>
+                <button type="submit">Submit</button>
+            </form>
+            <p></p>
+            
         </main>
     </div>
 </body>
