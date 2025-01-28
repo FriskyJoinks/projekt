@@ -16,7 +16,6 @@ export async function handleStaticFileRequest(pathSegments, request, response) {
         return;
     }
 
-
     let fileName = pathSegments[pathSegments.length - 1];
     let dotIndex = fileName.lastIndexOf('.');
 
