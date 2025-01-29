@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buyer Site</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
     <div class="container">
@@ -14,8 +14,8 @@
             <button onclick="location.href='/buyer'">Account</button>
         </nav>
         <main>
-            <h1>Customer</h1>
-            <p>Here is where you can put orders and buy </p>
+            <h1>Welcome to your page</h1>
+            <p>Unforunately this page hasn't been finished, We will be back momentarily with update</p>
         </main>
     </div>
 </body>
