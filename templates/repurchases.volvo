@@ -10,7 +10,7 @@
     <div class="container">
         <nav class="sidebar">
             <button onclick="location.href='/main'">Home</button>
-            <button onclick="location.href='/repurchases'">Recent Purchases</button>
+            <button onclick="location.href='/repurchases§'">Recent Purchases</button>
             <button onclick="location.href='/buyer'">Account</button>
         </nav>
         <main>
